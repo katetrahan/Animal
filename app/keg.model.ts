@@ -1,4 +1,4 @@
 export class Keg {
-  tapped: boolean = false;
+  tapped: number = 10;
 constructor(public name: string,  public brand: string, public price: string, public alcohol: string){}
 }

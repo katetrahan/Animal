@@ -6,10 +6,10 @@ import { Keg } from './keg.model';
   template: `
 
   <ul>
-    <li (click)="isTapped(currentKeg)" *ngFor="let currentKeg of childKegList">{{currentKeg.name}} {{currentKeg.brand}}
-    <input *ngIf="currentKeg.tapped === true" type="checkbox" checked (click)= "toggleDone(currentKeg, false)"/>
-    <input *ngIf="currentKeg.tapped === true" type= "checkbox" (click)="toggleDone(currentKeg, true)"/>
-    <button (click)="editButtonHasBeenClicked(currentKeg)">edit!</button></li>
+    <li *ngFor="let currentKeg of childKegList">{{currentKeg.name}} {{currentKeg.brand}}
+
+    <button (click)="editButtonHasBeenClicked(currentKeg)">edit!</button>
+    <button (click)="drinkPrintButtonHasBeenClicked(currentKeg)">pint sold</button></li>
   </ul>
   `
 })
@@ -21,12 +21,18 @@ export class KegListComponent {
     this.clickSender.emit(kegToEdit);
   }
 
-  isTapped(clickedKeg: Keg) {
-    if(clickedKeg.tapped === true) {
-      alert("This keg is tapped!");
-    } else {
-      alert("pour away!");
+
+
+
+   drinkPrintButtonHasBeenClicked(kegToDrink: Keg) {
+
+     if (kegToDrink.tapped > 0) {
+       kegToDrink.tapped -= 1;
+     } else {
+       alert("Empty keg!!")
+     }
     }
+
    }
    //
   //  priorityColor(currentTask) {
@@ -46,4 +52,3 @@ export class KegListComponent {
   //   toggleDone(clickedTask: Task, setCompleteness: boolean) {
   //     clickedTask.done = setCompleteness;
   //   }
- }
