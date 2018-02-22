@@ -6,10 +6,11 @@ import { Keg } from './keg.model';
   template: `
 
   <ul>
-    <li *ngFor="let currentKeg of childKegList">{{currentKeg.name}} {{currentKeg.brand}}
+    <li *ngFor="let currentKeg of childKegList">{{currentKeg.name}} {{currentKeg.brand}} {{currentKeg.tapped}}
 
     <button (click)="editButtonHasBeenClicked(currentKeg)">edit!</button>
     <button (click)="drinkPrintButtonHasBeenClicked(currentKeg)">pint sold</button></li>
+
   </ul>
   `
 })
