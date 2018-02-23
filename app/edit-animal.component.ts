@@ -6,12 +6,20 @@ import { Animal } from './animal.model';
   template: `
   <div>
     <div *ngIf="childSelectedAnimal">
-      <h3>{{childSelectedAnimal.name}}</h3>
-      <h3>{{childSelectedAnimal.age}}</h3>
+      <h3>Species:</h3>
+      <p>{{childSelectedAnimal.species}}</p>
+      <h3>Name:</h3>
+      <p>{{childSelectedAnimal.name}}</p>
+      <h3>Age:</h3>
+      <p>{{childSelectedAnimal.age}}</p>
+      <h3>Caretakers</h3>
+      <p>{{childSelectedAnimal.caretakers}}</p>
       <h3>Edit Animal</h3>
       <label>Enter Animal Name</label>
       <input [(ngModel)]="childSelectedAnimal.name"><br>
       <label>Enter Amount of Caretakers</label>
+      <input [(ngModel)]="childSelectedAnimal.caretakers"><br>
+      <label>Enter Age</label>
       <input [(ngModel)]="childSelectedAnimal.age"><br>
       <button (click)="doneButtonClicked()">Done</button>
       </div>
