@@ -33,7 +33,6 @@ _This is an application that uses TypeScript and Angular to display information 
 | :-------------     | :------------- | :-------------
 | **Adds animal**| "Species: Goat" | "Species: Goat" |
 | **Adds animal with information**| "Species: "Goat", Name: "Goatie", Age: "1", Diet: "Grass", Location: "Portland", Caretakers: "1", Sex: "Female", Likes: "Sunshine", Dislikes: "Being petted" " | "Species: "Goat", Name: "Goatie", Age: "3", Diet: "Grass", Location: "Portland", Caretakers: "1", Sex: "Female", Likes: "Sunshine", Dislikes: "Being petted" |
-
 | **Displays list of animals**| "View" | "Goat, Cow, Deer"|
 | **Display only young animals (under age 2)** |"View young animals"| "Goat"|
 | **Display only mature animals** |"View old animals(over age 2)"|"Cow, Deer"|
