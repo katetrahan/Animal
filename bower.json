@@ -1,9 +1,9 @@
 {
-  "name": "angular2-to-do",
+  "name": "angular2-animal-helper",
   "description": "",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/katetrahan/TapRoom-",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -13,5 +13,8 @@
   ],
   "dependencies": {
     "bootstrap": "^4.0.0"
-  }
+  },
+  "authors": [
+    "Kate Trahan <kathrynceciliatrahan@gmail.com>"
+  ]
 }
