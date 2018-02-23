@@ -6,11 +6,15 @@ import { Animal } from './animal.model';
   template: `
   <h1>New Animal</h1>
   <div>
-    <label>Enter Animal Description:</label>
+    <label>Enter Animal Species:</label>
     <input #newSpecies>
+    <label>Enter Animal Name:</label>
+    <input #newName>
   </div>
   <div>
-    <button (click)="submitForm(newSpecies.value); newSpecies.value='';">Add</button>
+    <button (click)="submitForm(newSpecies.value); newSpecies.value='';"
+    (click)="submitForm(newName.value); newName.value='';">Add</button>
+
   </div>`
 })
 
