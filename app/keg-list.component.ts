@@ -9,9 +9,10 @@ import { Keg } from './keg.model';
       <option value="full">Full Kegs</option>
       <option value="empty">Empty</option>
     </select>
-
+    <hr>
   <ul>
-    <li *ngFor="let currentKeg of childKegList | completeness:filterByCompleteness">{{currentKeg.name}} {{currentKeg.brand}} {{currentKeg.tapped}}
+    <li *ngFor="let currentKeg of childKegList | completeness:filterByCompleteness">{{currentKeg.name}} {{currentKeg.brand}} {{currentKeg.tapped}}<br>
+    <span [class]="costColor(currentKeg)">{{currentKeg.price}} per pint</span>
     <button (click)="editButtonHasBeenClicked(currentKeg)">edit!</button>
     <button (click)="drinkPrintButtonHasBeenClicked(currentKeg)">pint sold</button></li>
 
@@ -45,15 +46,15 @@ export class KegListComponent {
     }
 
 
-   //
-  //  priorityColor(currentTask) {
-  //    if (currentTask.priority === 3) {
-  //      return "bg-danger";
-  //    } else if (currentTask.priority === 2){
-  //      return "bg-warning";
-  //    } else {
-  //      return "bg-info";
-  //    }
-  //  }
+
+   costColor(currentKeg) {
+     if (currentKeg.price < 4) {
+       return "bg-danger";
+     } else if (currentKeg.price >= 10){
+       return "bg-warning";
+     } else {
+       return "bg-info";
+     }
+   }
 
 }

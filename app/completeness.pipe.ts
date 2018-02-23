@@ -25,7 +25,7 @@ export class CompletenessPipe implements PipeTransform{
         }
       }
       return output;
-    } else {
+    } else {   
       return input;
     }
   }

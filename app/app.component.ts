@@ -5,7 +5,8 @@ import { Keg } from './keg.model';
   selector: 'app-root',
   template: `
   <div class="container">
-    <h1>Welcome{{month}}/{{day}}/{{year}}</h1>
+    <h1>Date: {{month}}/{{day}}/{{year}}</h1>
+    <h1>Welcome To Kate's Taproom</h1>
     <h3>{{currentBrew}}</h3>
     <keg-list [childKegList]="masterKegList" (clickSender) = "editKeg($event)"></keg-list>
     <hr>
@@ -23,9 +24,9 @@ export class AppComponent {
   selectedKeg = null;
 
   masterKegList: Keg[] = [
-    new Keg('Total Domination', 'Ninkasi', "30", "5.7"),
-    new Keg('Red Chair', 'Deschutes', '40', '5.4'),
-    new Keg('Fresh Squeezed', 'Deschutes', '50', '6.7')
+    new Keg('Total Domination', 'Ninkasi', 5, "5.7"),
+    new Keg('Red Chair', 'Deschutes', 10, '5.4'),
+    new Keg('Fresh Squeezed', 'Deschutes', 3, '6.7')
   ];
 
  finishedEditing() {

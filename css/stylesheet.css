@@ -1,0 +1,15 @@
+h1, h3 {
+    font-family: 'Corben', Georgia, Times, serif;
+    text-align: center;
+}
+p {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1497541271502-639c540968b6?ixlib=rb-0.3.5&s=51a8bd2821f67fc3d736fadf66b68ab7&auto=format&fit=crop&w=2250&q=80");
+}
+
+ul {
+  font-size: 18pt;
+}
