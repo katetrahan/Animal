@@ -6,13 +6,29 @@ import { Animal } from './animal.model';
   template: `
   <h1>New Animal</h1>
   <div>
-    <label>Enter Animal Species:</label>
-    <input #newSpecies>
-    <label>Enter Animal Name:</label>
-    <input #newName>
+    <label>Enter Species:</label>
+    <input #newSpecies><br>
+    <label>Enter Name:</label>
+    <input #newName><br>
+    <label>Enter Age</label>
+    <input #newAge><br>
+    <label>Enter Diet</label>
+    <input #newDiet><br>
+    <label>Enter Zoo Location</label>
+    <input #newLocation><br>
+    <label>Enter Caretakers Needed</label>
+    <input #newCaretakers><br>
+    <label>Enter Sex:</label>
+    <input #newSex><br>
+    <label>Enter One Like</label>
+    <input #newLike><br>
+    <label>Enter One Dislike</label>
+    <input #newDislike><br>
+
+
   </div>
   <div>
-    <button (click)="submitForm(newSpecies.value, newName.value); newSpecies.value='';"
+    <button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLike.value, newDislike.value); newSpecies.value='';"
   >Add</button>
 
   </div>`
