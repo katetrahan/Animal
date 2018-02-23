@@ -11,7 +11,7 @@ Configuration/dependencies
   * Angular
   * TypeScript
 
-Specs
+Features To Be Implemented Now:
   * Spec 1: 'add new animals to application'.
   * Spec 2: 'add new animal with information on species, age, diet, zoo location, amount of caretakers needed, sex, one like and one dislike'.
   * Spec 3: 'display list of animals'.
@@ -42,8 +42,10 @@ _This is an application that uses TypeScript and Angular to display information 
 
 ## Ambitions to be implemented in the future
 * _Track animals' happiness levels by tracking if they are eating enough, playing enough, overall mood._
-* _Track living condition of animals: last cleaned, plant/enclosure conditions_
-* _Track sleep patterns_
+* _Track living condition of animals: last cleaned, plant/enclosure conditions._
+* _Track sleep patterns._
+* _Track vitals._
+* _Track caretakers the animal responds to best and pair animals to caretakers based on history._
 
 ## Setup/Installation Requirements
 
