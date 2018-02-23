@@ -7,8 +7,9 @@ import { Animal } from './animal.model';
   <div class="container">
     <h1>Animal Helper</h1>
     <h3>{{currentAnimal}}</h3>
-    <animal-list [childAnimalList]="masterAnimalList" (clickSender)= "editAnimal($event)"></animal-list>
-    <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
+    <animal-list [childAnimalList]="masterAnimalList" (clickSender)= "editAnimal($event)"></animal-list><hr>
+    <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal><hr>
+    <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
   </div>
   `
 })
@@ -31,6 +32,10 @@ import { Animal } from './animal.model';
 
     editAnimal(clickedAnimal) {
       this.selectedAnimal= clickedAnimal;
+    }
+
+    addAnimal(newAnimalFromChild: Animal) {
+      this.masterAnimalList.push(newAnimalFromChild);
     }
 
   }
