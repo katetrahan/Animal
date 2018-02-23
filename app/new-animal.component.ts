@@ -12,8 +12,8 @@ import { Animal } from './animal.model';
     <input #newName>
   </div>
   <div>
-    <button (click)="submitForm(newSpecies.value); newSpecies.value='';"
-    (click)="submitForm(newName.value); newName.value='';">Add</button>
+    <button (click)="submitForm(newSpecies.value, newName.value); newSpecies.value='';"
+  >Add</button>
 
   </div>`
 })
