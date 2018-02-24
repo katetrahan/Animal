@@ -12,13 +12,13 @@ Configuration/dependencies
   * TypeScript
 
 Features To Be Implemented Now:
-  * Spec 1: 'add new animals to application'.
-  * Spec 2: 'add new animal with information on species, age, diet, zoo location, amount of caretakers needed, sex, one like and one dislike'.
-  * Spec 3: 'display list of animals'.
-  * Spec 4: 'able to view all animals'.
-  * Spec 5: 'able to view only young animals'.
-  * Spec 6: 'able to view only mature animals
-  * Spec 7: 'able to edit animals name, age and caretakers'.
+  * Spec 1: add new animals to application.
+  * Spec 2: add new animal with information on species, age, diet, zoo location, amount of caretakers needed, sex, one like and one dislike.
+  * Spec 3: display list of animals.
+  * Spec 4: able to view all animals.
+  * Spec 5: able to view only young animals.
+  * Spec 6: able to view only mature animals.
+  * Spec 7: able to edit animals name, age and caretakers.
 
 #### _An application to track animals and their tendencies at a local zoo._
 

@@ -9,5 +9,4 @@ animals.push(new Animal('Turtle', 'Flash', 5, 'Lettuce', 'Portland', 1, 'Female'
 animals.push(new Animal('Polar Bear', 'Boots', 3, 'Fish', 'Portland', 3, 'Male', 'Swimming', 'People hiiting the glass'));
 
 for (var animal of animals) {
-  console.log(animal);
 }
