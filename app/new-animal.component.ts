@@ -10,19 +10,19 @@ import { Animal } from './animal.model';
     <input #newSpecies><br>
     <label>Enter Name:</label>
     <input #newName><br>
-    <label>Enter Age</label>
+    <label>Enter Age:</label>
     <input #newAge><br>
-    <label>Enter Diet</label>
+    <label>Enter Diet:</label>
     <input #newDiet><br>
-    <label>Enter Zoo Location</label>
+    <label>Enter Zoo Location:</label>
     <input #newLocation><br>
-    <label>Enter Caretakers Needed</label>
+    <label>Enter Caretakers Needed:</label>
     <input #newCaretakers><br>
     <label>Enter Sex:</label>
     <input #newSex><br>
-    <label>Enter One Like</label>
+    <label>Enter One Like:</label>
     <input #newLike><br>
-    <label>Enter One Dislike</label>
+    <label>Enter One Dislike:</label>
     <input #newDislike><br>
 
 

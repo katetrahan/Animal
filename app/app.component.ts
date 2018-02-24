@@ -15,7 +15,7 @@ import { Animal } from './animal.model';
 })
 
   export class AppComponent{
-    currentAnimal: string = "Animal Lovers Unite";
+    currentAnimal: string = "Care for Animals";
     selectedAnimal = null;
 
 

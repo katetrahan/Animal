@@ -12,7 +12,7 @@ import { Animal } from './animal.model';
     <hr>
   <ul>
     <li *ngFor="let currentAnimal of childAnimalList | wisdom:filterByWisdom ">{{currentAnimal.species}}<br>
-    <button (click)="editButtonHasBeenClicked(currentAnimal)">edit!</button></li>
+    <button (click)="editButtonHasBeenClicked(currentAnimal)">edit</button></li>
   </ul>`
 })
 
